@@ -159,3 +159,7 @@ $ git push -u origin main
 # в первый раз передаётся флаг -u (сязывает локальную ветку с одноимённой удалённой)
 # в последующие разы - просто git push
 ```
+
+* Статусы файлов git
+
+![untracked, modified, staged + tracked, tracked](https://github.com/andreynemkovich/git-base/blob/main/git-files-statuses.png?raw=true "Вот картинка")
