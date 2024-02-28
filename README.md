@@ -168,4 +168,4 @@ $ git push -u origin main
 
 * Статусы файлов git
 
-![untracked, modified, staged + tracked, tracked](https://github.com/andreynemkovich/git-base/blob/main/git-files-statuses.png?raw=true "Вот картинка")
+![untracked, modified, staged+tracked, tracked](https://github.com/andreynemkovich/git-base/blob/main/git-files-statuses.png?raw=true "Вот картинка")
