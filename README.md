@@ -113,9 +113,7 @@ $ rm -r .git
 
 * Проверить состояние репозитория
 
-```bash
-$ git status
-```
+
 
 * Добавить файлы в отслеживаемые
 
@@ -175,4 +173,26 @@ $ git push -u origin main
 
 * Статусы файлов git
 
+```bash
+$ git status
+# проверить статусы файлов
+```
+
 ![untracked, modified, staged+tracked, tracked](https://github.com/andreynemkovich/git-base/blob/main/git-files-statuses.png?raw=true "Вот картинка")
+
+* Добавление изменений в последний коммит
+
+`git commit --amend --no-edit` - добавь изменения к последнему коммиту и оставь сообщение прежним;
+`git commit --amend -m "Новое сообщение"` — измени сообщение к последнему коммиту на Новое сообщение.
+
+* Откат файлов и коммитов
+
+`git restore --staged hello.txt` — переведи файл hello.txt из состояния staged обратно в untracked или modified;
+`git restore hello.txt` — верни файл hello.txt к последней версии, которая была сохранена через git commit или git add;
+`git reset --hard b576d89` — удали все незакоммиченные изменения из staging и «рабочей зоны» вплоть до указанного коммита.
+
+* Просмотр изменений
+
+`git diff` — покажи изменения в «рабочей зоне», то есть в modified-файлах;
+`git diff a9928ab 11bada1` — выведи разницу между двумя коммитами;
+`git diff --staged` — покажи изменения, которые добавлены в staged-файлах.
